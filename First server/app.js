@@ -8,6 +8,7 @@ http.createServer(requestListener); */
 
 const server = http.createServer( function(req, res){
   console.log(req);
+  process.exit(); // stop the event loop
 });
 
 const PORT = 3000;
