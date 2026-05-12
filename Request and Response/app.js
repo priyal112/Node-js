@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer( function(req, res){
-  console.log(req.url, request.method, request.headers);
+  console.log(req.url, req.method, req.headers);
   res.setHeaders('Content-Type', 'text/html');
   res.write('<html>');
   res.write('<head><title>Complete coding</title></head>');
