@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer( function(req, res){
   console.log(req.url, req.method);
-  res.write('<>');
+  res.write('<html>');
 });
 
 const PORT = 3000;
